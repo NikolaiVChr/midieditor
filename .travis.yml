@@ -78,6 +78,6 @@ deploy:
 notifications:
   email:
     recipients:
-      - support@midieditor.org
+      - emptyyetfull+travis@gmail.com
     on_success: always
     on_failure: always
