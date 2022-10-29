@@ -32,8 +32,8 @@ before_install:
     # For mxe.cc (see http://mxe.cc/#requirements)
     #- if [ "$BUILD_OS" = "WINDOWS" ]; then sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 86B72ED9; fi
     #- if [ "$BUILD_OS" = "WINDOWS" ]; then sudo add-apt-repository 'deb [arch=amd64] http://pkg.mxe.cc/repos/apt trusty main'; fi
-    - if [ "$BUILD_OS" = "WINDOWS" ]; then sudo apt-get update; fi
-    - if [ "$BUILD_OS" = "WINDOWS" ]; then sudo apt-get install mxe-i686-w64-mingw32.static-qtbase mxe-i686-w64-mingw32.static-qtmultimedia; fi
+    - if [ "$BUILD_OS" = "WINDOWS" ]; then apt-get update; fi
+    - if [ "$BUILD_OS" = "WINDOWS" ]; then apt-get install mxe-i686-w64-mingw32.static-qtbase mxe-i686-w64-mingw32.static-qtmultimedia; fi
 
     - if [ "$BUILD_OS" = "MAC" ]; then brew install qt5; fi
     - if [ "$BUILD_OS" = "MAC" ]; then brew link qt5 --force; fi
